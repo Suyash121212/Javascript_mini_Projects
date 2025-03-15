@@ -1,0 +1,186 @@
+/* style.css */
+:root {
+    --primary-color: #3a86ff;
+    --secondary-color: #f8f9fa;
+    --accent-color: #38b000;
+    --danger-color: #e63946;
+    --text-color: #212529;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .div1 {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Input containers */
+  .div1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Todo input */
+  .text {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+  }
+  
+  .text:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.2);
+  }
+  
+  /* Date input */
+  .date {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+  }
+  
+  .date:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(58, 134, 255, 0.2);
+  }
+  
+  /* Add button */
+  .add_btn {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add_btn:hover {
+    background-color: #2d9200;
+    transform: translateY(-2px);
+  }
+  
+  .add_btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Todo list display */
+  .display_todo {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  /* Todo item */
+  .todo-item {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .todo-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  /* Todo text */
+  .todo-text {
+    font-size: 18px;
+    font-weight: 500;
+    word-break: break-word;
+  }
+  
+  /* Todo date */
+  .todo-date {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  /* Delete button */
+  .delete_btn {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete_btn:hover {
+    background-color: #c1121f;
+  }
+  
+  /* Completed todo styles */
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .div1 {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .display_todo {
+      grid-template-columns: 1fr;
+    }
+    
+    .todo-item {
+      grid-template-columns: 1fr auto;
+    }
+    
+    .todo-date {
+      grid-column: 1 / -1;
+      margin-top: 5px;
+    }
+  }

@@ -1,0 +1,58 @@
+
+body{
+    background: linear-gradient(to right, #2484cd, #feb47b)
+}
+.body{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 150px;
+    margin-left:100px;
+    
+}
+#note-img{
+    height: 35px;
+   
+}
+.title span{
+    font-weight: bold;
+}
+.button{
+    font-size: 17px;
+    font-weight: bold;
+    /* border-radius:20px; */
+    height: 40px;
+    width: 150px;
+    background:linear-gradient(#b600f8, #111111);
+    box-shadow: #070000;
+    border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+    color: rgb(224, 221, 221);
+    cursor: pointer ;
+}
+
+#edit-img{
+    height: 20px;
+}
+.note{
+    margin-top: 20px;
+
+}
+.input-box{
+ background-color: white;
+ min-height: 160px;
+ width: 400px;
+ position:relative;
+ border: none;
+ border-radius: 5px;
+ outline: none;
+}
+.input-box img{
+    height: 20px;
+    margin-top: 130px;
+    margin-left: 370px;
+    cursor: pointer;
+}

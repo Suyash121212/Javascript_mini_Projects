@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-color: rgb(4, 37, 63);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.text{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 180px;
+    margin-left:100px;
+
+
+}
+.text1{
+color: white;
+/* margin-left: 10px; */
+
+}
+.text2 {
+color:#019f55;
+margin-top: 10px;
+padding-bottom: 6px;
+
+}
+.text2 span{
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+.input{
+    margin-top: 20px;
+    height: 50px;
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+#input-text{
+   border: none;
+   width: 300px;
+   height: 50px;
+   font-size: large;
+   margin-left: 10px;
+    
+}
+#img{
+    height: 20px;
+    /* margin-left: 150px; */
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    
+   
+
+
+}
+.button{
+    margin-top: 20px;
+    background-color: rgb(52, 158, 52);
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 50px;
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+#btn{
+    font-size: 20px;
+    
+   
+}
+#generate_png{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 25px;
+}

@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+
+body{
+    background-color:  #bbc6fa;
+    font-family: "Playfair", serif;
+}.quote-block{
+    height: 200px;
+    width: 400px;
+    background-color:#fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 10px 20px 0px rgb(101, 101, 101);
+}
+.quote-block h3::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+   
+    position: absolute;
+    bottom: 210px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+.quote-block h3{
+    font-size: 30px;
+    margin-top:-16px;
+}
+.quote-block span{
+    display: block;
+    float: right;
+    margin-top: 60px;
+
+
+}
+.bottom{
+    background-color: #ffffff;
+    height: 40px;
+    width: 395px;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.new-quote{
+background-color: #bbc6fa;
+height: 30px;
+width: 100px;
+border: none;
+border-radius: 5px;
+box-shadow: 0px 10px 20px 0px rgb(157, 154, 154);
+cursor: pointer;
+
+
+}
+.tweet{
+    background-color: #bbc6fa;
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px rgb(157, 154, 154);
+    cursor: pointer;
+}

@@ -1,0 +1,458 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+ :root {
+     --primary-color: #4e54c8;
+     --secondary-color: #8f94fb;
+     --accent-color: #ff6b6b;
+     --dark-color: #2c2c54;
+     --light-color: #f8f9fa;
+     --transition: all 0.3s ease;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+     color: var(--light-color);
+     line-height: 1.6;
+     overflow-x: hidden;
+ }
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ header {
+     padding: 60px 0;
+     text-align: center;
+     position: relative;
+ }
+
+ .header-title {
+     font-size: 3.5rem;
+     font-weight: 700;
+     margin-bottom: 20px;
+     opacity: 0;
+     transform: translateY(-20px);
+     animation: fadeInDown 1s forwards;
+ }
+
+ .header-subtitle {
+     font-size: 1.2rem;
+     font-weight: 300;
+     max-width: 700px;
+     margin: 0 auto;
+     opacity: 0;
+     transform: translateY(20px);
+     animation: fadeInUp 1s forwards 0.3s;
+ }
+
+ @keyframes fadeInDown {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ @keyframes fadeInUp {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .projects-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 25px;
+     padding: 20px 0 80px;
+ }
+
+ .project-card {
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+     transition: var(--transition);
+     position: relative;
+     opacity: 0;
+     transform: scale(0.9);
+     animation: fadeIn 0.6s forwards;
+ }
+
+ @keyframes fadeIn {
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .project-card:nth-child(1) {
+     animation-delay: 0.1s;
+ }
+
+ .project-card:nth-child(2) {
+     animation-delay: 0.2s;
+ }
+
+ .project-card:nth-child(3) {
+     animation-delay: 0.3s;
+ }
+
+ .project-card:nth-child(4) {
+     animation-delay: 0.4s;
+ }
+
+ .project-card:nth-child(5) {
+     animation-delay: 0.5s;
+ }
+
+ .project-card:nth-child(6) {
+     animation-delay: 0.6s;
+ }
+
+ .project-card:nth-child(7) {
+     animation-delay: 0.7s;
+ }
+
+ .project-card:nth-child(8) {
+     animation-delay: 0.8s;
+ }
+
+ .project-card:nth-child(9) {
+     animation-delay: 0.9s;
+ }
+
+ .project-card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+ }
+
+ .project-image {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+     transition: var(--transition);
+ }
+
+ .project-card:hover .project-image {
+     transform: scale(1.05);
+ }
+
+ .project-content {
+     padding: 20px;
+ }
+
+ .project-title {
+     font-size: 1.5rem;
+     font-weight: 600;
+     margin-bottom: 10px;
+     color: var(--light-color);
+ }
+
+ .project-description {
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.8);
+     margin-bottom: 15px;
+ }
+
+ .project-tags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 5px;
+     margin-bottom: 15px;
+ }
+
+ .project-tag {
+     background: var(--accent-color);
+     color: white;
+     padding: 3px 10px;
+     border-radius: 15px;
+     font-size: 0.7rem;
+ }
+
+ .project-link {
+     display: inline-block;
+     background: var(--light-color);
+     color: var(--primary-color);
+     padding: 8px 15px;
+     border-radius: 5px;
+     text-decoration: none;
+     font-weight: 500;
+     transition: var(--transition);
+ }
+
+ .project-link:hover {
+     background: white;
+     transform: translateY(-2px);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .shapes {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     z-index: -1;
+ }
+
+ .shape {
+     position: absolute;
+     background: rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+     animation: float 15s infinite;
+ }
+
+ .shape:nth-child(1) {
+     width: 80px;
+     height: 80px;
+     left: 10%;
+     top: 20%;
+     animation-duration: 17s;
+ }
+
+ .shape:nth-child(2) {
+     width: 120px;
+     height: 120px;
+     left: 30%;
+     top: 60%;
+     animation-duration: 19s;
+     animation-delay: 2s;
+ }
+
+ .shape:nth-child(3) {
+     width: 50px;
+     height: 50px;
+     left: 60%;
+     top: 30%;
+     animation-duration: 13s;
+     animation-delay: 1s;
+ }
+
+ .shape:nth-child(4) {
+     width: 100px;
+     height: 100px;
+     left: 80%;
+     top: 70%;
+     animation-duration: 21s;
+     animation-delay: 3s;
+ }
+
+ @keyframes float {
+     0% {
+         transform: translate(0, 0) rotate(0deg);
+     }
+
+     25% {
+         transform: translate(-20px, 20px) rotate(90deg);
+     }
+
+     50% {
+         transform: translate(20px, 40px) rotate(180deg);
+     }
+
+     75% {
+         transform: translate(40px, -20px) rotate(270deg);
+     }
+
+     100% {
+         transform: translate(0, 0) rotate(360deg);
+     }
+ }
+
+ footer {
+     text-align: center;
+     padding: 20px;
+     background: rgba(0, 0, 0, 0.1);
+ }
+
+ footer p {
+     font-size: 0.9rem;
+     color: rgba(255, 255, 255, 0.7);
+ }
+
+ /* Modal */
+ .modal {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     z-index: 999;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+     transition: opacity 0.3s;
+ }
+
+ .modal.show {
+     display: flex;
+     animation: modalFadeIn 0.3s forwards;
+ }
+
+ @keyframes modalFadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .modal-content {
+     background: white;
+     width: 90%;
+     max-width: 900px;
+     border-radius: 10px;
+     overflow: hidden;
+     position: relative;
+     transform: scale(0.7);
+     transition: transform 0.3s;
+ }
+
+ .modal.show .modal-content {
+     transform: scale(1);
+ }
+
+ .modal-header {
+     padding: 20px;
+     background: var(--primary-color);
+     color: white;
+     position: relative;
+ }
+
+ .modal-title {
+     font-size: 1.8rem;
+     margin-right: 40px;
+ }
+
+ .modal-close {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     background: none;
+     border: none;
+     color: white;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }
+
+ .modal-body {
+     padding: 20px;
+     color: var(--dark-color);
+     max-height: 70vh;
+     overflow-y: auto;
+ }
+
+ .modal-footer {
+     padding: 15px 20px;
+     background: #f5f5f5;
+     text-align: right;
+ }
+
+ .modal-visit-btn {
+     background: var(--primary-color);
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: var(--transition);
+ }
+
+ .modal-visit-btn:hover {
+     background: var(--secondary-color);
+ }
+
+ .modal-image {
+     width: 100%;
+     max-height: 400px;
+     object-fit: cover;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 992px) {
+     .projects-grid {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .header-title {
+         font-size: 3rem;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .header-title {
+         font-size: 2.5rem;
+     }
+
+     .header-subtitle {
+         font-size: 1rem;
+     }
+ }
+
+ @media (max-width: 576px) {
+     .projects-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .header-title {
+         font-size: 2rem;
+     }
+
+     .project-card {
+         max-width: 350px;
+         margin: 0 auto;
+     }
+ }
+
+ /* Animated Counter */
+ .counter-container {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     margin-bottom: 40px;
+     opacity: 0;
+     transform: translateY(20px);
+     animation: fadeInUp 1s forwards 0.5s;
+ }
+
+ .counter-item {
+     text-align: center;
+ }
+
+ .counter {
+     font-size: 2.5rem;
+     font-weight: 700;
+     color: var(--accent-color);
+ }
+
+ .counter-label {
+     font-size: 0.9rem;
+     opacity: 0.8;
+ }
+
+ /* Scroll Animations */
+ .animate-on-scroll {
+     opacity: 0;
+     transform: translateY(50px);
+     transition: opacity 0.6s, transform 0.6s;
+ }
+
+ .animate-on-scroll.visible {
+     opacity: 1;
+     transform: translateY(0);
+ }

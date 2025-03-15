@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(435deg,rgb(54, 111, 244),rgb(48, 40, 40));
+}
+.selection{
+    height: 100px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.date{
+    height: 30px;
+    width: 180px;
+border: none;
+}
+
+.selection h1 span{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.input{
+    background-color: #353789;
+
+    height: 100px;
+    width: 300px;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+
+}
+
+.selection button{
+    height: 30px;
+    width: 80px;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.display{
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+}
